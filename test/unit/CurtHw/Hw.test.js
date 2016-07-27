@@ -58,7 +58,7 @@ describe.only('HomwWork', () => {
     }
   });
 
-  it('原本用 api 取得 friends list 改為透過查詢資料庫的方式 (find)', async (done) => {
+  it('將其中一個 friend 更新其 email 欄位為 hellojs@trunk.studio (update)', async (done) => {
     try {
 
 
@@ -77,7 +77,7 @@ describe.only('HomwWork', () => {
     }
   });
 
-  it('原本用 api 取得 friends list 改為透過查詢資料庫的方式 (find)', async (done) => {
+  it('刪除該位 friend (delete)', async (done) => {
     try {
 
 
