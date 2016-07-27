@@ -37,16 +37,21 @@ describe('practice', () => {
   it('使用 sequelize 新增一個 post 使測試 pass', async (done) => {
     try {
       const input = {
-        title: 'AAA',
-        desc: 'BBB',
-        price: 100,
+        name: '321',
+        facebookId: 'aaa',
+        email: 'aaa',
       };
 
-      let result;
+      let result =
+      await models.Friend.create({
+        name: '321',
+        facebookId: 'aaa',
+        email: 'aaa',
+      });
 
-      result.title.should.be.eq('AAA');
-      result.desc.should.be.eq('BBB');
-      result.price.should.be.eq(100);
+      result.name.should.be.eq('321');
+      result.facebookId.should.be.eq('aaa');
+      result.email.should.be.eq('aaa');
       done();
     } catch (e) {
       done(e);
